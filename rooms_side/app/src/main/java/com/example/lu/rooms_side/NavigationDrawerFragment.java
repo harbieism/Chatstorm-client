@@ -219,6 +219,15 @@ public class NavigationDrawerFragment extends Fragment {
 
             ActionBar actionBar = getActionBar();
             actionBar.hide();
+        }else if(position ==2) {
+            FragmentTransaction ft = getActivity().getFragmentManager().beginTransaction();
+            NewFragment fb = new NewFragment();
+            ft.replace(R.id.container, fb);
+            ft.commit();
+
+            ActionBar actionBar = getActionBar();
+            actionBar.hide();
+
         }else{
             FragmentTransaction ft = getActivity().getFragmentManager().beginTransaction();
             BuildFragment fb = new BuildFragment();

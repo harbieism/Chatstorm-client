@@ -5,9 +5,11 @@ import android.app.Activity;
 import android.app.ActionBar;
 import android.app.Fragment;
 import android.app.FragmentManager;
+import android.app.FragmentTransaction;
 import android.content.Context;
 import android.os.Build;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -103,6 +105,17 @@ public class main extends Activity
         if (id == R.id.action_example) {
             return true;
         }
+
+        if(id==R.id.action_new)
+        {
+            FragmentTransaction ft = getFragmentManager().beginTransaction();
+            NewFragment fb = new NewFragment();
+            ft.replace(R.id.container, fb);
+            ft.commit();
+
+            ActionBar actionBar = getActionBar();
+            actionBar.hide();
+        }
         return super.onOptionsItemSelected(item);
     }
 
@@ -144,6 +157,8 @@ public class main extends Activity
             ((main) activity).onSectionAttached(
                     getArguments().getInt(ARG_SECTION_NUMBER));
         }
+
+
     }
 
 }

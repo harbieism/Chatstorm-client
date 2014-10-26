@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Storm Chat</string>
+    <string name="app_name">Chat Storm</string>
     <string name="title_section1">Main</string>
     <string name="title_section2">My info</string>
     <string name="title_section3">New</string>
