@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".main" >
+    <item android:id="@+id/action_example"
+        android:title="Popularity"
+        android:orderInCategory="100"
+        android:showAsAction="withText" />
+    <item android:id="@+id/sort_Distance"
+        android:title="Distance"
+        android:orderInCategory="99"
+        android:showAsAction="never" />
+    <item android:id="@+id/sort_activity"
+        android:title="Activity"
+        android:orderInCategory="98"
+        android:showAsAction="never" />
+</menu>
